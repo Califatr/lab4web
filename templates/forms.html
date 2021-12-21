@@ -1,0 +1,72 @@
+<div class="form-container" id="form_container">
+    <form id="loginForm" action="" class="auth-form login-form">
+        <div class="auth-form__title">Вход</div>
+        <ul class="auth-form__items">
+            <li class="auth-form__item">
+                <label for="loginForm_email" class="form-label">Введите email</label>
+                <input class="form-input" name="email" type="email" id="loginForm_email"
+                    placeholder=" example@example.com" required>
+            </li>
+            <li class="auth-form__item">
+                <label for="loginForm_password" class="form-label">Введите пароль</label>
+                <input class="form-input" name="password" type="password" id="loginForm_password" required>
+            </li>
+            <li class="auth-form__item">
+                <div class="auth-form-error" id="loginForm-error"></div>
+            </li>
+            <li class="auth-form__item">
+                <input type="submit" class="auth-form__submitBtn" value="Войти">
+            </li>
+            <li class="auth-form__item">
+                <div id="toggle_toSignupForm" class="auth-form__toggle-form">Регистрация</div>
+            </li>
+        </ul>
+        <div id="closeForm_button1" class="auth-form__close-form-button">X</div>
+    </form>
+    <form id="signupForm" action="" class="auth-form signup-form">
+        <div class="auth-form__title">Регистрация</div>
+        <ul class="auth-form__items">
+            <li class="auth-form__item">
+                <label for="signupForm_name" class="form-label">Введите имя</label>
+                <input class="form-input" name="name" type="text" id="signupForm_name" placeholder=" Иван" required
+                    title="Вводите имена на русском языке">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_phone" class="form-label">Введите телефон</label>
+                <input class="form-input" name="phone" type="text" id="signupForm_phone" placeholder=" 89005557788"
+                    required title="Введите телефон в формате 8XXXXXXXXXX, например 89007778899">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_email" class="form-label">Введите email</label>
+                <input class="form-input" name="email" type="email" id="signupForm_email"
+                    placeholder=" example@example.com" required title="Введите email в формате xxx@xxx.xx">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_password" class="form-label">Введите пароль</label>
+                <input class="form-input" name="password" type="password" id="signupForm_password" required
+                    title="Минимум 6 символов. Обязательно наличие букв и цифр">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_passwordRepeat" class="form-label">Повторите пароль</label>
+                <input class="form-input" name="passwordRepeat" type="password" id="signupForm_passwordRepeat" required
+                    title="Пароли должны совпадать">
+            </li>
+            <li class="auth-form__item auth-form__item_checkbox">
+                <label for="signupForm_checkbox" class="form-label">Принять условия на обработку персональных
+                    данных</label>
+                <input class="form-input form-input_checkbox" name="checkbox" type="checkbox" id="signupForm_checkbox"
+                    required>
+            </li>
+            <li class="auth-form__item">
+                <div class="auth-form-error" id="signupForm-error"></div>
+            </li>
+            <li class="auth-form__item">
+                <input type="submit" class="auth-form__submitBtn" value="Зарегистрироваться">
+            </li>
+            <li class="auth-form__item">
+                <div id="toggle_toLoginForm" class="auth-form__toggle-form">Авторизация</div>
+            </li>
+        </ul>
+        <div id="closeForm_button2" class="auth-form__close-form-button">X</div>
+    </form>
+</div>
